@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  margin-left:200px;
+  margin-right:200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.customeSL{
+    width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  text-decoration: none;
+  
+  display: inline-block;
+    padding: 12px 20px;
+        text-align: center;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn1{
+    background-color: white; 
+  color: black; 
+  border: 1px solid crimson;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  text-decoration: none;
+  
+  display: inline-block;
+    padding: 12px 20px;
+        text-align: center;
+        
+}
+.btn1:hover{
+    background-color: crimson;
+  color: white;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2> CHECKOUT</h2>
+<p></p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form >
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="Aname"><i class="fa fa-user"></i> Agent Name</label>
+            <input type="text" id="Aname" name="Agentname" placeholder="KFC">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="kfc@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="20/18 Ly Thai To Street">
+            <label for="phone"><i class="fa fa-mobile-phone"></i> Phone</label>
+            <input type="text" id="city" name="phone" placeholder="0123456789">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Province</label>
+                <select class="customeSL" name="calc_shipping_provinces" required="">
+                        <option value="An Giang">An Giang
+                        <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                        <option value="Bắc Giang">Bắc Giang
+                        <option value="Bắc Kạn">Bắc Kạn
+                        <option value="Bạc Liêu">Bạc Liêu
+                        <option value="Bắc Ninh">Bắc Ninh
+                        <option value="Bến Tre">Bến Tre
+                        <option value="Bình Định">Bình Định
+                        <option value="Bình Dương">Bình Dương
+                        <option value="Bình Phước">Bình Phước
+                        <option value="Bình Thuận">Bình Thuận
+                        <option value="Bình Thuận">Bình Thuận
+                        <option value="Cà Mau">Cà Mau
+                        <option value="Cao Bằng">Cao Bằng
+                        <option value="Đắk Lắk">Đắk Lắk
+                        <option value="Đắk Nông">Đắk Nông
+                        <option value="Điện Biên">Điện Biên
+                        <option value="Đồng Nai">Đồng Nai
+                        <option value="Đồng Tháp">Đồng Tháp
+                        <option value="Đồng Tháp">Đồng Tháp
+                        <option value="Gia Lai">Gia Lai
+                        <option value="Hà Giang">Hà Giang
+                        <option value="Hà Nam">Hà Nam
+                        <option value="Hà Tĩnh">Hà Tĩnh
+                        <option value="Hải Dương">Hải Dương
+                        <option value="Hậu Giang">Hậu Giang
+                        <option value="Hòa Bình">Hòa Bình
+                        <option value="Hưng Yên">Hưng Yên
+                        <option value="Khánh Hòa">Khánh Hòa
+                        <option value="Kiên Giang">Kiên Giang
+                        <option value="Kon Tum">Kon Tum
+                        <option value="Lai Châu">Lai Châu
+                        <option value="Lâm Đồng">Lâm Đồng
+                        <option value="Lạng Sơn">Lạng Sơn
+                        <option value="Lào Cai">Lào Cai
+                        <option value="Long An">Long An
+                        <option value="Nam Định">Nam Định
+                        <option value="Nghệ An">Nghệ An
+                        <option value="Ninh Bình">Ninh Bình
+                        <option value="Ninh Thuận">Ninh Thuận
+                        <option value="Phú Thọ">Phú Thọ
+                        <option value="Quảng Bình">Quảng Bình
+                        <option value="Quảng Bình">Quảng Bình
+                        <option value="Quảng Ngãi">Quảng Ngãi
+                        <option value="Quảng Ninh">Quảng Ninh
+                        <option value="Quảng Trị">Quảng Trị
+                        <option value="Sóc Trăng">Sóc Trăng
+                        <option value="Sơn La">Sơn La
+                        <option value="Tây Ninh">Tây Ninh
+                        <option value="Thái Bình">Thái Bình
+                        <option value="Thái Nguyên">Thái Nguyên
+                        <option value="Thanh Hóa">Thanh Hóa
+                        <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                        <option value="Tiền Giang">Tiền Giang
+                        <option value="Trà Vinh">Trà Vinh
+                        <option value="Tuyên Quang">Tuyên Quang
+                        <option value="Vĩnh Long">Vĩnh Long
+                        <option value="Vĩnh Phúc">Vĩnh Phúc
+                        <option value="Yên Bái">Yên Bái
+                        <option value="Phú Yên">Phú Yên
+                        <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                        <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
+                        <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                        <option value="Tp.Hà Nội">Tp.Hà Nội
+                        <option value="TP  HCM">TP HCM
+                 </select>
+                  <input class="billing_address_1" name="" type="hidden" value="">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="70000">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-25">
+            <h3>Payment</h3>
+          
+            <label for="Pname">Please chose your method</label>
+              <div class="icon-container">    
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="	fa fa-credit-card" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                    <label class="custom-control-label" for="httt-1" style="float:right;margin-right:220px;">Cash Payment</label>
+                    <input id="httt-1" name="httt_ma" type="radio" style=" float: left;" class="custom-control-input" required=""
+                        value="1">
+                    
+                </div>
+                <div class="custom-control custom-radio" >
+                    <label class="custom-control-label" for="httt-2" style="float:right;margin-right:200px;">Banking Payment</label>
+                    <input id="httt-2" name="httt_ma" type="radio" style=" float: left;" class="custom-control-input" required="" value="2">
+                    
+                </div>
+                <div class="custom-control custom-radio">
+                    <label class="custom-control-label" for="httt-3" style="float:right;margin-right:255px;">Ship COD</label>
+                    <input id="httt-3" name="httt_ma" type="radio" style=" float: left;" class="custom-control-input" required="" value="3">
+                    
+                </div>
+                <div class="custom-control custom-radio">
+                    <label class="custom-control-label" for="httt-4" style="float:right;margin-right:215px;">MOMO banking</label>
+                    <input id="httt-4" name="httt_ma" type="radio" style=" float: left;" class="custom-control-input" required="" value="4">
+                    
+                </div>
+             </div>
+            </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <div class="row">
+            <div class="col-50">
+              <a href="index.html" class="btn1">Return to cart</a>
+            </div>
+            <div class="col-50">
+			  <a href="success.html" class="btn">Continue to checkout</a>
+            </div>
+          </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
